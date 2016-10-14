@@ -1,4 +1,4 @@
-# terraform-microservice
+# terraform-microservice Module
 Microservice terraform module
 
 ## Example usage:
