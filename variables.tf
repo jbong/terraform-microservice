@@ -115,3 +115,9 @@ variable "vpc_id" {
   type        = "string"
   description = "Parent VPC ID"
 }
+
+variable "iam_policy_count" {
+  type        = "string"
+  description = "IAM policy count"
+  default     = "0"
+}
