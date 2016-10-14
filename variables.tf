@@ -117,7 +117,7 @@ variable "vpc_id" {
 }
 
 variable "iam_policy_count" {
-  type        = "string"
+  type        = "list"
   description = "IAM policy count"
-  default     = "0"
+  default     = []
 }
