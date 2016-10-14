@@ -45,10 +45,16 @@ variable "aws_region" {
   description = "The AWS region"
 }
 
-variable "iam_policy_arns" {
-  type        = "list"
-  default     = []
-  description = "A list of IAM policy ARNs to associate with the EC2 role used to create EC2 instance profiles"
+#variable "iam_policy_arns" {
+#  type        = "list"
+#  default     = []
+#  description = "A list of IAM policy ARNs to associate with the EC2 role used to create EC2 instance profiles"
+#}
+
+variable iam_instance_profile_id { 
+  type = "string"
+  default = ""
+  description = "IAM instance profile id"
 }
 
 variable "lc_ami_id" {
@@ -116,8 +122,8 @@ variable "vpc_id" {
   description = "Parent VPC ID"
 }
 
-variable "iam_policy_count" {
-  type        = "list"
-  description = "IAM policy count"
-  default     = []
-}
+#variable "iam_policy_count" {
+#  type        = "list"
+#  description = "IAM policy count"
+#  default     = []
+#}
