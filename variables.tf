@@ -51,11 +51,13 @@ variable "aws_region" {
 #  description = "A list of IAM policy ARNs to associate with the EC2 role used to create EC2 instance profiles"
 #}
 
-variable iam_instance_profile { 
+
+/*
+variable iam_instance_profile {
   type = "string"
   default = ""
   description = "IAM instance profile name"
-}
+}*/
 
 variable "lc_ami_id" {
   type        = "string"
